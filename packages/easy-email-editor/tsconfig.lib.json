@@ -8,7 +8,7 @@
       "@/*": [
         "./src/*"
       ],
-      "easy-email-core": [
+      "@groovymedia/easy-email-core": [
         "../easy-email-core"
       ]
     }

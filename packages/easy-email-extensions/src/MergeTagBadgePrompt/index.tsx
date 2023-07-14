@@ -6,7 +6,7 @@ import {
   IconFont,
   useRefState,
   getEditorRoot,
-} from 'easy-email-editor';
+} from '@groovymedia/easy-email-editor';
 import { get } from 'lodash';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
@@ -135,7 +135,7 @@ export function MergeTagBadgePrompt() {
   return (
     <>
 
-      {root && createPortal(<style>{stylesText}</style>, root as any)}
+      {root && createPortal(<style>{stylesText}</style>, root )}
       {textContainer && createPortal(
         <div ref={popoverRef} onClick={onClick} className={classnames('easy-email-merge-tag-popover')}>
           <div className='easy-email-merge-tag-popover-container'>

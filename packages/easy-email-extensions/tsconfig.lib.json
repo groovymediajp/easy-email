@@ -9,10 +9,10 @@
       "@extensions/*": [
         "./src/*"
       ],
-      "easy-email-core": [
+      "@groovymedia/easy-email-core": [
         "../easy-email-core"
       ],
-      "easy-email-editor": [
+      "@groovymedia/easy-email-editor": [
         "../easy-email-editor"
       ]
     }

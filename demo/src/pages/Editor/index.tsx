@@ -33,7 +33,7 @@ import {
   EmailEditorProvider,
   EmailEditorProviderProps,
   IEmailTemplate,
-} from 'easy-email-editor';
+} from '@groovymedia/easy-email-editor';
 
 import { Stack } from '@demo/components/Stack';
 import { pushEvent } from '@demo/utils/pushEvent';
@@ -41,13 +41,13 @@ import { FormApi } from 'final-form';
 import { UserStorage } from '@demo/utils/user-storage';
 
 import { useCollection } from './components/useCollection';
-import { AdvancedType, BasicType, IBlockData, JsonToMjml } from 'easy-email-core';
+import { AdvancedType, BasicType, IBlockData, JsonToMjml } from '@groovymedia/easy-email-core';
 import {
   BlockMarketManager,
   ExtensionProps,
   MjmlToJson,
   StandardLayout,
-} from 'easy-email-extensions';
+} from '@groovymedia/easy-email-extensions';
 import { AutoSaveAndRestoreEmail } from '@demo/components/AutoSaveAndRestoreEmail';
 
 // Register external blocks

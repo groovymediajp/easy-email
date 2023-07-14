@@ -1,12 +1,12 @@
 {
-  "name": "easy-email-editor",
+  "name": "@groovymedia/easy-email-editor",
   "license": "MIT",
   "description": "Email editor",
-  "version": "4.12.2",
+  "version": "4.12.5",
   "author": "m-Ryan",
   "repository": {
     "type": "git",
-    "url": "git@github.com:m-Ryan/easy-email.git"
+    "url": "git+ssh://git@github.com/m-Ryan/easy-email.git"
   },
   "keywords": [
     "email editor core"
@@ -68,11 +68,17 @@
     "vite": "^2.6.14"
   },
   "peerDependencies": {
-    "easy-email-core": "^4.3.6",
+    "@groovymedia/easy-email-core": "^4.3.6",
     "mjml-browser": "^4.10.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-final-form": "^6.5.7"
   },
-  "gitHead": "2a08e8af15766344de708d891c1c8ea31bb77646"
+  "bugs": {
+    "url": "https://github.com/m-Ryan/easy-email/issues"
+  },
+  "homepage": "https://github.com/m-Ryan/easy-email#readme",
+  "directories": {
+    "lib": "lib"
+  }
 }

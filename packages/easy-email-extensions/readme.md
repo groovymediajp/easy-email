@@ -22,9 +22,9 @@ $ yarn add easy-email-extensions
 
 ```js
 import React from 'react';
-import { BlockManager, BasicType, AdvancedType } from 'easy-email-core';
-import { EmailEditor, EmailEditorProvider } from 'easy-email-editor';
-import { ExtensionProps, StandardLayout } from 'easy-email-extensions';
+import { BlockManager, BasicType, AdvancedType } from '@groovymedia/easy-email-core';
+import { EmailEditor, EmailEditorProvider } from '@groovymedia/easy-email-editor';
+import { ExtensionProps, StandardLayout } from '@groovymedia/easy-email-extensions';
 import { useWindowSize } from 'react-use';
 
 import 'easy-email-editor/lib/style.css';
@@ -139,7 +139,7 @@ export default function App() {
   - You can add or overwrite
 
     ```tsx
-    import { BlockAttributeConfigurationManager } from 'easy-email-extensions';
+    import { BlockAttributeConfigurationManager } from '@groovymedia/easy-email-extensions';
 
     BlockAttributeConfigurationManager.add({
       [BasicType.TEXT]: () => <div>will be overwrite `Text`</div>,
@@ -179,8 +179,11 @@ export default function App() {
   - You can add or overwrite popover's preset blocks
 
     ```tsx
-    import { BasicType } from 'easy-email-core';
-    import { BlockMarketManager, BlockMaskWrapper } from 'easy-email-extensions';
+    import { BasicType } from '@groovymedia/easy-email-core';
+    import {
+      BlockMarketManager,
+      BlockMaskWrapper,
+    } from '@groovymedia/easy-email-extensions';
 
     BlockMarketManager.addCategories([
       {
@@ -238,7 +241,7 @@ export default function App() {
 ## transform mjml to json
 
 ```ts
-import { MjmlToJson } from 'easy-email-extensions';
+import { MjmlToJson } from '@groovymedia/easy-email-extensions';
 
 const json = MjmlToJson(`
 <mjml>

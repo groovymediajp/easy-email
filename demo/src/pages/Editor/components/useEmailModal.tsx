@@ -1,5 +1,5 @@
-import { JsonToMjml } from 'easy-email-core';
-import { IEmailTemplate } from 'easy-email-editor';
+import { JsonToMjml } from '@groovymedia/easy-email-core';
+import { IEmailTemplate } from '@groovymedia/easy-email-editor';
 import { Message, Modal } from '@arco-design/web-react';
 import React, { useMemo, useState, useCallback } from 'react';
 import mjml from 'mjml-browser';
@@ -10,7 +10,7 @@ import { Form } from 'react-final-form';
 import { useLoading } from '@demo/hooks/useLoading';
 import { pushEvent } from '@demo/utils/pushEvent';
 import mustache from 'mustache';
-import { TextAreaField, TextField } from 'easy-email-extensions';
+import { TextAreaField, TextField } from '@groovymedia/easy-email-extensions';
 
 const schema = Yup.object().shape({
   toEmail: Yup.string().email('Unvalid email').required('Email required'),

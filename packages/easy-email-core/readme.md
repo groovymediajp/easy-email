@@ -5,6 +5,7 @@
 This is the core easy-email library, composed by the following parts
 
 - utils
+
   - JsonToMjml
   - BlockManager
   - createCustomBlock
@@ -33,7 +34,7 @@ $ yarn add easy-email-core
 ## transform json to mjml
 
 ```ts
-import { JsonToMjml } from 'easy-email-core';
+import { JsonToMjml } from '@groovymedia/easy-email-core';
 
 const xml = JsonToMjml({
   data: json,
@@ -145,7 +146,11 @@ console.log(xml);
 ## parseReactBlockToBlockData
 
 ```tsx
-import { JsonToMjml, components, parseReactBlockToBlockData } from 'easy-email-core';
+import {
+  JsonToMjml,
+  components,
+  parseReactBlockToBlockData,
+} from '@groovymedia/easy-email-core';
 
 const { Page, Section, Column, Text, Button } = components;
 
@@ -401,7 +406,7 @@ import {
   JsonToMjml,
   BasicType,
   BlockManager,
-} from 'easy-email-core';
+} from '@groovymedia/easy-email-core';
 const { Section, Column, Image, Button } = components;
 
 type IMyFirstBlock = IBlockData<

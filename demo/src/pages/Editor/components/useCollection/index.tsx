@@ -1,8 +1,8 @@
 import { Picture } from '@demo/components/Picture';
 import { Message } from '@arco-design/web-react';
-import { IBlockData } from 'easy-email-core';
-import { CollectedBlock, IconFont } from 'easy-email-editor';
-import { BlockMarketCategory, BlockMaskWrapper } from 'easy-email-extensions';
+import { IBlockData } from '@groovymedia/easy-email-core';
+import { CollectedBlock, IconFont } from '@groovymedia/easy-email-editor';
+import { BlockMarketCategory, BlockMaskWrapper } from '@groovymedia/easy-email-extensions';
 
 import React, { useCallback, useMemo } from 'react';
 import { useLocalStorage } from 'react-use';

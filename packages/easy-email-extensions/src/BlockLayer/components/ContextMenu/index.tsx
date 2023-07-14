@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import { IconFont, TextStyle, scrollBlockEleIntoView, useBlock, useEditorProps } from 'easy-email-editor';
-import { getIndexByIdx, getSiblingIdx } from 'easy-email-core';
+import { IconFont, TextStyle, scrollBlockEleIntoView, useBlock, useEditorProps } from '@groovymedia/easy-email-editor';
+import { getIndexByIdx, getSiblingIdx } from '@groovymedia/easy-email-core';
 import styles from './index.module.scss';
 import { IBlockDataWithId } from '../../../BlockLayer';
 import { useAddToCollection } from '@extensions/hooks/useAddToCollection';

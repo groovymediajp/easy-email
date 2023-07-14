@@ -1,6 +1,6 @@
-import { useBlock, useFocusIdx } from 'easy-email-editor';
+import { useBlock, useFocusIdx } from '@groovymedia/easy-email-editor';
 import { Collapse, Grid, Switch } from '@arco-design/web-react';
-import { AdvancedBlock, AdvancedType } from 'easy-email-core';
+import { AdvancedBlock, AdvancedType } from '@groovymedia/easy-email-core';
 import { TextField } from '@extensions/components/Form';
 import React, { useCallback } from 'react';
 

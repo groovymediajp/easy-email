@@ -6,11 +6,11 @@ import {
   getPreviewClassName,
   AdvancedType,
   mergeBlock,
-} from 'easy-email-core';
+} from '@groovymedia/easy-email-core';
 
 import { CustomBlocksType } from '../constants';
 import React from 'react';
-import { getContentEditableClassName } from 'easy-email-editor';
+import { getContentEditableClassName } from '@groovymedia/easy-email-editor';
 
 const { Column, Section, Wrapper, Text, Button, Image, Group } = components;
 
