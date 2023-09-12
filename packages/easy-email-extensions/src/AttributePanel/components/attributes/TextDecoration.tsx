@@ -15,24 +15,24 @@ const options = [
       return t('Underline');
     },
   },
-  {
-    value: 'overline',
-    get label() {
-      return t('Overline');
-    },
-  },
+  // {
+  //   value: 'overline',
+  //   get label() {
+  //     return t('Overline');
+  //   },
+  // },
   {
     value: 'line-through',
     get label() {
       return t('Line through');
     },
   },
-  {
-    value: 'blink',
-    get label() {
-      return t('Blink');
-    },
-  },
+  // {
+  //   value: 'blink',
+  //   get label() {
+  //     return t('Blink');
+  //   },
+  // },
   {
     value: 'inherit',
     get label() {
