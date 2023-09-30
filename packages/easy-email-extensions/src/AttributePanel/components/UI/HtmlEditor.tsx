@@ -26,6 +26,11 @@ export const HtmlEditor: React.FC<{
     setContent(focusBlock?.data.value.content);
   }, [focusBlock?.data.value.content]);
 
+  const onReset = () => {
+    setContent(focusBlock?.data.value.content);
+    onClose();
+  }
+
   const onClose = () => {
     setVisible(false);
   };
@@ -63,6 +68,9 @@ export const HtmlEditor: React.FC<{
             {t('Html')}
           </TextStyle>
           <Stack>
+            <Button onClick={onReset}>
+              {t('Cancel')}
+            </Button>
             <Button type='primary' onClick={onSave}>
               {t('Save')}
             </Button>
