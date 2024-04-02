@@ -9,7 +9,6 @@
 
 .node-type-page {
   min-height: 100%;
-  padding-bottom: 100px;
 }
 .node-type-page * {
   user-select: none;
