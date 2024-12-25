@@ -34,7 +34,9 @@ export function BasicBlock(props: {
     if (
       url === '' ||
       /{{([\s\S]+?)}}/g.test(url) ||
-      /\*\|([^\|\*]+)\|\*/g.test(url)
+      /\*\|([^\|\*]+)\|\*/g.test(url) ||
+      // FIXED: [abc] などのタグが含まれている場合も、サンプル画像にする
+      /\[([^\[\]]+)\]/g.test(url)
     ) {
       const adapterData = omit(params, 'data.attributes.src');
 
